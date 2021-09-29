@@ -8,6 +8,7 @@ function App() {
   };
 
   useEffect(() => {
+    document.title = `Count ${count}`;
     const title = document.querySelector(".title");
     title.textContent = `Count ${count}`;
   }, [count]);
